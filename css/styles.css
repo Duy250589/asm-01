@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: inside;
+}
+
+body {
+    margin: 40px;
+}
+
+.cv-document {
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: arial, sans-serif, tahoma;
+    font-size: 12pt;
+}
+
+.cv-page {
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    width: 900px;
+    min-height: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 1px rgb(0, 0, 0);
+    background-color: #fff;
+    position: relative;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section:not(.section:first-child) .section-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid black;
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}
+
+.section-content {
+    position: relative;
+    text-align: justify;
+}
+
+.content-left,
+.content-right {
+    display: inline-block;
+}
+
+.content-left div {
+    margin-bottom: 10px;
+}
+
+.content-left div:last-child {
+    margin-bottom: 0;
+}
+
+.content-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.info-label {
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+
+.info-content a {
+    color: black;
+    text-decoration: none;
+}
+
+#info--name {
+    color: #0e2452;
+    margin-bottom: 20px;
+}
+
+#info--photo {
+    width: 113px;
+    height: 113px;
+}
+
+.content-item {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.item-timeline, .item-content {
+    display: inline-block;
+}
+
+.item-timeline {
+    width: 200px;
+    vertical-align: top;
+}
+
+.item-content {
+    width: 590px;
+}
+
+.item-content div {
+    margin-bottom: 10px;
+}
+
+.item-content div:last-child {
+    margin-bottom: 0;
+}
+
+.education-title {
+    font-weight: bold;
+}
+
+.experience-company {
+    font-weight: bold;
+}
+
+.experience-content li {
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.experience-content li:last-child {
+    margin-bottom: 0;
+}
+
+.activity-title {
+    font-weight: bold;
+}
+
+.item-skill {
+    font-weight: bold;
+}
+
+.hobby-content li {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.hobby-content li:last-child {
+    margin-bottom: 0;
+}
+
+.project-item {
+    margin-bottom: 30px;
+}
+
+.project-item:last-child {
+    margin-bottom: 0;
+}
+
+.project-item ul li {
+    margin-bottom: 10px;
+}
+
+.project-item ul li:last-child {
+    margin-bottom: 0;
+}
+
+.project--title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.project--year {
+    margin-bottom: 15px;
+}
+
+.project-label {
+    font-weight: bold;
+}
+
+#contact ol li {
+    margin-bottom: 10px;
+}
+
+#contact ol li:last-child {
+    margin-bottom: 0;
+}
+
+#education, #experience, #activity {
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    width: 1px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.timeline .content-item {
+    padding-left: 25px;
+    position: relative;
+}
+
+.timeline .content-item .item-timeline::before {
+    content: "";
+    position: absolute;
+    left: 0.5px;
+    top: 14px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+}
